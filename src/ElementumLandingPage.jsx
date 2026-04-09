@@ -58,11 +58,16 @@ export default function ElementumLandingPage() {
   return (
     <div className="page-shell">
       <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
         * { box-sizing: border-box; }
         html, body, #root { margin: 0; min-height: 100%; background: #efefed; }
         body {
           font-family: Arial, Helvetica, sans-serif;
           color: #111;
+        }
+
+        .poppins {
+          font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
         }
 
         .page-shell {
@@ -706,10 +711,10 @@ export default function ElementumLandingPage() {
           <section className="hero">
             <div className="scribble-left" />
             <div className="purple-blob" />
-            <h1 className="display">
-              The <span className="under-orange">thinkers</span> and<br />
-              doers were <span className="pink-pill">changing</span><br />
-              the <span className="green-pill">status</span> Quo with
+            <h1 className="display poppins">
+              The <span className="under-orange poppins">thinkers</span> and<br />
+              doers were <span className="pink-pill poppins">changing</span><br />
+              the <span className="green-pill poppins">status</span> Quo with
             </h1>
             <p className="hero-sub">
               We are a team of strategists, designers communicators, researchers.
@@ -736,10 +741,10 @@ export default function ElementumLandingPage() {
 
           <section className="section two-col">
             <div>
-              <h2 className="section-title">
-                <span className="orange-underline">Tomorrow</span> should
+              <h2 className="section-title poppins">
+                <span className="orange-underline poppins">Tomorrow</span> should
                 <br />
-                be better than <span className="heading-pill">today</span>
+                be better than <span className="heading-pill poppins">today</span>
               </h2>
               <p className="section-copy">
                 We are a team of strategists, designers communicators, researchers,
@@ -761,10 +766,10 @@ export default function ElementumLandingPage() {
               <div className="big-round-photo" style={{ marginLeft: 0, backgroundImage: `url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80)` }} />
             </div>
             <div>
-              <h2 className="section-title">
-                <span className="heading-pill">See</span> how we can
+              <h2 className="section-title poppins">
+                <span className="heading-pill poppins">See</span> how we can
                 <br />
-                help you <span className="orange-underline">progres</span>
+                help you <span className="orange-underline poppins">progres</span>
               </h2>
               <p className="section-copy">
                 We add a layer of fearless insights and action that allows change
@@ -783,30 +788,30 @@ export default function ElementumLandingPage() {
 
           <section className="offers">
             <div className="offers-head">
-              <h2 className="section-title">
-                What we <span className="heading-pill">can</span>
+              <h2 className="section-title poppins">
+                What we <span className="heading-pill poppins">can</span>
                 <br />
-                <span className="orange-underline">offer</span> you!
+                <span className="orange-underline poppins">offer</span> you!
               </h2>
             </div>
 
             <div className="offers-table">
               {offerRows.map((row, index) => (
-                <div className="offer-row" key={index}>
-                  <div className="offer-small">{row.left}</div>
-                  <div className="offer-title">{row.right}</div>
-                  <div className="arrow">→</div>
-                </div>
+                  <div className="offer-row" key={index}>
+                    <div className="offer-small poppins">{row.left}</div>
+                    <div className="offer-title poppins">{row.right}</div>
+                    <div className="arrow">→</div>
+                  </div>
               ))}
             </div>
             <div className="sticker">content</div>
           </section>
 
           <section className="testimonial">
-            <h2 className="testimonial-title">
-              <span className="heading-pill">What</span> our customer
+            <h2 className="testimonial-title poppins">
+              <span className="heading-pill poppins">What</span> our customer
               <br />
-              says <span className="small-underline">About Us</span>
+              says <span className="small-underline poppins">About Us</span>
             </h2>
 
             <div className="quote-box">
@@ -836,7 +841,7 @@ export default function ElementumLandingPage() {
           </div>
 
           <div className="container">
-            <h2 className="newsletter-title">
+            <h2 className="newsletter-title poppins">
               Subscribe to
               <br />
               our newsletter
